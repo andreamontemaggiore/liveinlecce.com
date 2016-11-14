@@ -1,0 +1,254 @@
+body{
+    font: 300 14px Roboto,"Roboto Condensed",sans-serif;
+}
+.first_circle {
+  margin-top: 75px;
+}
+
+.circle {
+  width: 100px;
+  margin: 6px 15px 0px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+}
+
+.circle canvas {
+  vertical-align: top;
+}
+
+.circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 230px;
+
+  position: relative;
+  width: 130px;
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.text-card-title{
+    height: 24px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+    color: black;
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.text-card-content{
+    height: 60px;
+    text-align: left;
+    font-size: 11px;
+    line-height: 15px;
+    color: black;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.row-dettagli-title{
+    height: auto;
+    text-align: center;
+    font-size: 4.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.row-dettagli-content{
+    min-height: 40px;
+    text-align: left;
+    font-size: 1.6rem;
+    color: black;
+    border-bottom: 1px solid lightgray;
+}
+
+.more-info{
+    height: 20px;
+    text-align: center;
+    font-size: 9px;
+    line-height: 20px;
+    margin: 0;
+    color: #2F8AD1;
+    border: 1px solid lightgray;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    cursor: pointer;
+}
+
+.true-false{
+    height: 30px;
+    width: 30px;
+}
+
+.centerBlock{
+  display: table;
+  margin: 0 auto;
+}
+
+.plus_img{
+    margin-top: -171px;
+    margin-left: 95px;
+    height: 30px;
+    width: 30px;
+}
+
+.text-navbar{
+    color: white;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 50px;
+    z-index: 1000
+}
+
+.row_mobile{
+    background-color: #f3f3f3;
+    height: 300px;
+    margin-top: 100px;
+}
+
+#rotate_review{
+    margin-top: 50px !important;
+    font-size: 1.8rem;
+    line-height: 1.444em;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto
+}
+
+#rotate_user{
+    margin-top: 30px !important;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: auto;
+    color: gray;
+}
+
+
+.navbar{
+    padding: 10px 10px;
+    margin-bottom: 0px;
+    border: 0;
+}
+.navbar-default {
+    background-color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #0681C4;
+    background-color: white;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #0681C4;
+}
+.navbar-nav a {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+.searchBox {
+    width: 280px;
+    border: 1px solid #eee;
+}
+.noPadding {
+    padding: 0 !important;
+}
+.noMargin {
+    margin: 0 !important;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+
+@media (max-width: @screen-sm) {
+    .text-navbar{
+    color: white;
+    padding-left: 10px;
+    font-size: 8px;
+    line-height: 50px;
+    }
+}
+.navbar{
+    border-radius: 0 !important;
+}
+
+#anchor_row_dettagli{
+    margin-top: -72px;
+}
+.navbar-brand {
+    padding: 0px 15px;
+}
+
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DEL TESTO */
+.greenText{
+   color: #4caf50;
+}
+
+.redText{
+    color: #f44336;
+}
+
+.blueText{
+    color: #0681C4;
+}
+
+.yellowText{
+    color: #f0d457;
+}
+
+.whiteText{
+    color: white;
+}
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DI BACKGROUND */
+.green{
+    background-color: #4caf50;
+}
+
+.red{
+    background-color: #f44336;
+}
+
+.blue{
+    background-color: #0681C4;
+}
+
+.yellow{
+    background-color: #f0d457;
+}
+
+.white{
+    background-color: white;
+}
+

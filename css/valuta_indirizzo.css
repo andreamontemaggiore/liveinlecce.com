@@ -1,0 +1,196 @@
+/* Styles go here */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 0px;
+  background-color: #F6F6F6;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.row-footer{
+    background-color: #191919;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.info-Title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: #999999;
+}
+.info-details{
+    font-weight: 400;
+    line-height: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.border-top-gray{
+    border-top: 1px solid gray;
+}
+.margin-top-50{
+  margin-top: 50px;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 1080px;
+  padding: 0 15px;
+  background-color: white;
+}
+.container .credit {
+  margin: 20px 0;
+}
+.full {
+  background: url("http://liveinlecce.com/img/rsz_torresantandrea.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar{
+    padding: 10px 0;
+    margin-bottom: 0px;
+    border: 0;
+}
+.navbar-default {
+    background-color: white;
+    border-bottom: 1px solid #0681C4;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #0681C4;
+    background-color: white;
+}
+.navbar-brand {
+    padding: 0px 15px;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #0681C4;
+}
+.navbar-nav a {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+.searchBox {
+    width: 280px;
+    border: 1px solid #eee;
+}
+.noPadding {
+    padding: 0 !important;
+}
+.noMargin {
+    margin: 0 !important;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.row_form{
+    margin: 30px;
+    background-color: #F6F6F6;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+.p_avviso{
+font-weight: 500;
+}
+.p_ognuno{
+color: firebrick;
+text-align: center;
+font-size: 50px !important;    
+font-family: 'Tangerine', serif;
+font-weight: 400;
+font-style: normal;
+}
+.font-size-16{
+font-size: 16px;
+}
+.font-size-17{
+font-size: 17px;
+}
+#valuta_indirizzo{
+    color: #337ab7;
+}
+
+
+
+
+
+
+
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DEL TESTO */
+.greenText{
+   color: #4caf50;
+}
+
+.redText{
+    color: #f44336;
+}
+
+.blueText{
+    color: #0681C4;
+}
+
+.yellowText{
+    color: #f0d457;
+}
+
+.whiteText{
+    color: white;
+}
+
+.grayText{
+    color: gray;
+}
+.
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DI BACKGROUND */
+.green{
+    background-color: #4caf50;
+}
+
+.red{
+    background-color: #f44336;
+}
+
+.blue{
+    background-color: #0681C4;
+}
+
+.yellow{
+    background-color: #f0d457;
+}
+
+.white{
+    background-color: white;
+}

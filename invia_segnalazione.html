@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Segnalazione Lecce">
+    <meta name="author" content="Andrea Montemaggiore">
+
+    <title>Invia una segnalazione</title>
+
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/invia_segnalazione.css" rel="stylesheet">
+      <link href="css/star-rating.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&region=IT&input=Lecce&key=AIzaSyBMMUOWPOOBiHZVwDqOBY2UU4RqRj5gtag"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="js/invia_segnalazione.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-responsive centrato hoverImgCat"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="esplora.html">ESPLORA</a></li>
+              <li><a href="come_funziona.html">COME FUNZIONA</a></li>
+                <li><a href="valuta_indirizzo.html" >VALUTA INDIRIZZO</a></li>
+              <li><a href="invia_segnalazione.html" id="invia_segnalazione">INVIA SEGNALAZIONE</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+        
+        
+      <!-- Begin page content -->
+      <div class="container">
+
+        <div class="page-header">
+          <h1>Invia una segnalazione</h1>
+        </div>
+        <div class="row row_form" id="main_content">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+            
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p class="p_avviso font-size-16">Questa area permette di segnalare un'inefficienza o una mancanza presente nel territorio di Lecce.</p>
+                    <p class="font-size-16">Compilando il form sottostante, potrai avvisare le autorit&aacute; amministrative competenti, le quali, dopo aver risolto il problema, potranno informare tutti i cittadini in possesso dell'app tramite una notifica.</p>
+                    <p class="p_ognuno font-size-16">"Se ognuno fa la sua parte, tutto pu&oacute; cambiare!"</p>
+                </div>
+                </div>
+            <form>
+                <div class="row margin-top-50">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                            <label class="textLeft control-label fs16">  <label for="user_info[user][userFirstname]">Nome</label> </label><br>
+                            <input id="nome" class="form-control" type="text" required>              
+                            </div>                                                
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label class="textLeft control-label fs16">  <label for="user_info[user][userFirstname]">Cognome</label> </label><br>
+                            <input id="cognome" class="form-control" type="text">                                                              
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <label class="textLeft control-label fs16">  <label for="user_info[user][userFirstname]">Email</label> </label><br>
+                            <input id="email" class="form-control" type="email" required>                                                              
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                             <label class="textLeft control-label fs16">  <label for="user_info[user][userFirstname]">Telefono</label> </label><br>
+                            <input id="telefono" class="form-control" type="number" required> 
+                        </div>                                 
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label class="textLeft control-label fs16">  <label for="user_info[user][userFirstname]">Indirizzo dove è presente il problema</label> </label><br>
+                            <input class="form-control noRadius bgSeach  color5 fs14 fw500 noShadow" id="search_view_2" placeholder="Inizia a digitare e clicca sull'indirizzo" type="text" required>                                                    
+                        </div>                            
+                    </div>
+                    
+                    <br><br>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label class="textLeft control-label fs16">  <label for="user_info[user][userFirstname]">Descrivi il problema (max 150 caratteri)</label> </label><br>
+                            <textarea class="form-control" rows="5" id="segnalazione" required></textarea>                                                   
+                        </div>                            
+                    </div>  
+                    
+                    
+                    
+                    
+            </div>    
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-hidden">
+                <div id="map_canvas" style="width:100%;height:380px;"></div>
+            </div>
+            </div>
+                    
+            <div class="row">
+            
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input type="button" value="Invia" class="btn btn-primary text-center center-block margin-top-50" id="invia">
+                </div>
+            </div>
+            </form> 
+        </div>    
+          
+      </div>
+    </div><!-- Wrap Div end -->
+
+    <!-- Footer -->
+        <footer>
+            <div class="row row-footer hidden-xs">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-top-50" >
+                    <p class="info-Title">ABOUT</p>
+                    <p class="info-details"><a href="index.html" class="whiteText">HOME</a></p>
+                    <p class="info-details"><a href="esplora.html" class="whiteText">ESPLORA</a></p>
+                    <p class="info-details"><a href="come_funziona.html" class="whiteText">COME FUNZIONA</a></p>
+                    <p class="info-details"><a href="valuta_indirizzo.html" class="whiteText">VALUTA INDIRIZZO</a></p>
+                    <p class="info-details"><a href="invia_segnalazione.html" class="whiteText">INVIA SEGNALAZIONE</a></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-top-50">
+                    <p class="info-Title">CATEGORIE</p>
+                    <p class="info-details">Attivit&agrave; commerciali</p>
+                    <p class="info-details">Green</p>
+                    <p class="info-details">Social</p>
+                    <p class="info-details">Servizi</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 margin-top-50">
+                    <p class="info-Title">ACCEDI</p>
+                </div>
+                <div class="col-lg-12 margin-top-50 border-top-gray">
+                     Web & App Developments by Daniele Montemaggiore
+                    
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+
+     </div><!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quality life in Lecce">
+    <meta name="author" content="Daniele Montemaggiore">
+
+    <title>Esplora i dati</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/esplora.css" rel="stylesheet">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&region=IT&input=Lecce"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="navbar.html"></div>   
+    <div class="container">
+
+        <div class="row full">
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 sfondo-sfocato">
+                <p class="testo-sfocato">LiveInLecce è l'innovativo sistema che ti permette di trovare il luogo pi&ugrave; adatto alle tue esigenze</p>
+                
+            </div>
+        </div>
+        <div class="row margin-top-50">
+            <div class="col-lg-offset-1 col-lg-10 col-xs-offset-1 col-xs-10 ">
+                
+                 <div class="btn-group hidden-xs">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle " data-toggle="dropdown" id="green">
+                        Green <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Aree cani</a></li>
+                      <li><a href="#">Parchi giochi</a></li>
+                      <li><a href="#">Giardini</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="social"> 
+                        Social <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Centri giovanili</a></li>
+                      <li><a href="#">Cinema</a></li>
+                      <li><a href="#">Impianti sportivi</a></li>
+                        <li><a href="#">Musei</a></li>
+                        <li><a href="#">Piscina</a></li>
+                        <li><a href="#">Teatri</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="commercial">
+                    Attivit&agrave; commerciali <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Attivit&agrave; commerciali</a></li>
+                      <li><a href="#">Edicole</a></li>
+                        <li><a href="#">Farmacie</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="services">
+                    Servizi <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Bike sharing</a></li>
+                      <li><a href="#">Car sharing</a></li>
+                      <li><a href="#">Fermate</a></li>
+                      <li><a href="#">Piste ciclabili</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                
+                 <div class="btn-group  visible-xs">
+                  <button type="button" class="btn btn-primary" id="green">Green</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li id="social">Social</li>
+                    <li id="commercial">Commercial</li>
+                    <li id="services">Services</li>
+                  </ul>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="row margin-top-50">
+            <div class="col-lg-offset-1 col-lg-10">
+              <p class="content-info" id="info-tab"> </p>
+            </div>
+        </div>
+        
+        <div class="row margin-top-50">
+            <div class="col-lg-offset-1 col-lg-10">
+              <table class="table table-striped">
+                <thead id="thead">
+                  <tr>
+                    <th>Nome</th>
+                    <th>Indirizzo</th>
+                    <th>Tipo struttura</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- LA TABELLA VIENE POPOLATA DINAMICAMENTE TRAMITE JQUERY -->
+                </tbody>
+              </table>
+            </div>
+        </div>   
+        
+
+        
+
+        <div w3-include-html="footer.html"></div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/esplora.js"></script>
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>

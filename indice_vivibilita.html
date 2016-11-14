@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Indice di vivibilità di Lecce">
+    <meta name="author" content="Andrea Montemaggiore">
+
+    <title>Indice di vivibilità</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/indice_vivibilita.css" rel="stylesheet">
+    
+    
+  
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&region=IT&input=Lecce&key=AIzaSyBMMUOWPOOBiHZVwDqOBY2UU4RqRj5gtag"></script>
+    <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="js/indice_vivibilita.js"></script>
+    
+    <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 0px;
+  }
+  </style>
+</head>
+
+<body>
+    <div w3-include-html="navbar_senza_ricerca.html"></div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div id="map_canvas" style="width:100%;height:380px;"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse text-navbar" data-spy="affix" data-offset-top="380">
+        <!--
+      <ul class="nav navbar-nav">      
+        <li class="active"><a href="#">Basic Topnav</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    -->
+             L'indirizzo che hai indicato &egrave stato qualificato come <b> abbastanza adatto </b> per la vita di tutti i giorni
+    </nav>
+    <!--
+    <div class="container-fluid" style="background-color:#F44336;color:#fff;height:300px;">
+      <h1>Bootstrap Affix Example</h1>
+      <h3>Fixed (sticky) navbar on scroll</h3>
+      <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+      <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+    </div>
+    -->
+    
+        <div class="row first_circle">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <div class="centerBlock">
+                        <div class="card card-4 green" id="green">
+                            <div class="second circle">
+                              <strong></strong>
+                            </div>
+                            <p class="text-card-title white">GREEN</p>
+                            <p class="text-card-content white">Aree cani, parchi giochi, giardini, aree pedonali e ZTL</p>
+                            <p class="more-info white">PI&Ugrave; INFO</p>
+
+                        </div>
+                     </div>   
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <div class="centerBlock">
+                        <div class="card card-4 blue" id="blue">
+                            <div class="third circle">
+                              <strong></strong>
+                            </div> 
+                            <p class="text-card-title white">SOCIAL</p>
+                            <p class="text-card-content white">Centri giovanili, cinema, impianti sportivi, musei piscina, teatri </p>
+                            <p class="more-info white">PI&Ugrave; INFO</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <div class="centerBlock">
+                        <div class="card card-4 red" id="red">
+                            <div class="forth circle">
+                              <strong></strong>
+                            </div>
+                            <p class="text-card-title white">COMMERCIAL</p>
+                            <p class="text-card-content white">Attivit&agrave; commerciali, edicole, farmacie</p>
+                            <p class="more-info white">PI&Ugrave; INFO</p>
+                        </div> 
+                    </div>
+                </div>   
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <div class="centerBlock">
+                        <div class="card card-4 yellow" id="yellow">
+                            <div class="second circle">
+                              <strong></strong>
+                            </div>
+                            <p class="text-card-title white">SERVICES</p>
+                            <p class="text-card-content white">Bike sharing, car sharing, fermate, piste ciclabili</p>
+                            <p class="more-info white">PI&Ugrave; INFO</p>
+                        </div> 
+                    </div>
+                </div>   
+        </div>
+    
+    <div class="row first_circle row_mobile" >
+        <h2 style="text-align: center; font-weight: 800; color: gray;">COSA NE PENSANO LE PERSONE ?</h2>
+        <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">   
+              <h1>
+                  <div id="rotate_review"> 
+                      <div>"E' la possibilità di avere i centri commerciali nelle vicinanze a fare la differenza."</div> <div>"E' il miglior posto dove far crescere i nostri figli."</div> 
+                      <div>"Peccato per la mancanza di parchi nelle vicinanze."</div> 
+                      <div>"Consigliato per la cordialità delle persone."</div> 
+                  </div> 
+              </h1>
+            
+              <div id="rotate_user"> 
+                  <div>Mario Rossi, uomo, 54 anni.</div> 
+                  <div>Giuseppina Verdi, donna, 23 anni.</div> 
+                  <div>Guido La Vespa, uomo, 38 anni.</div> 
+                  <div>Mario Balotelli, uomo, 45 anni.</div> 
+              </div>
+        </div>
+    </div> 
+    <div id="anchor_row_dettagli" style="color: #f3f3f3">.
+    </div>    
+    
+    <div class="row first_circle" id="row_green">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <p class="row-dettagli-title greenText">GREEN</p>
+                <p class="row-dettagli-content white" id="area_cani"></p>
+                <p class="row-dettagli-content white" id="area_giochi"></p>
+                <p class="row-dettagli-content white" id="parchi_giardini"></p>
+                <p class="row-dettagli-content white" id="aree_pedonali"></p>
+        </div>
+    </div> 
+    
+    <div class="row first_circle" id="row_blue">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <p class="row-dettagli-title blueText">SOCIAL</p>
+                <p class="row-dettagli-content white" id="centro_giovanile"></p>
+                <p class="row-dettagli-content white" id="cinema"></p>
+                <p class="row-dettagli-content white" id="impianto_sportivo"></p>
+                <p class="row-dettagli-content white" id="museo"></p>
+                <p class="row-dettagli-content white" id="piscina"></p>
+                <p class="row-dettagli-content white" id="teatro"></p>
+        </div>
+    </div>
+    
+    <div class="row first_circle" id="row_red">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <p class="row-dettagli-title redText">COMMERCIAL</p>
+                <p class="row-dettagli-content white" id="attivita_commerciali"></p>
+                <p class="row-dettagli-content white" id="edicole"></p>
+                <p class="row-dettagli-content white" id="farmacie"></p>
+        </div>
+    </div>
+    
+    <div class="row first_circle" id="row_yellow">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+            <p class="row-dettagli-title yellowText">SERVICES</p>
+                <p class="row-dettagli-content white" id="bike_sharing"></p>
+                <p class="row-dettagli-content white" id="car_sharing"></p>
+                <p class="row-dettagli-content white" id="fermate"></p>
+                <p class="row-dettagli-content white" id="piste_ciclabili"></p>
+        </div>
+    </div>
+    
+    
+    <div class="row first_circle">
+        <div id="grafico" style="height: 400px; min-width: 310px; margin: 50px;"></div>
+    </div> 
+        
+    
+    <script src="js/ricerca.js"></script>
+  
+</body>
+</html>

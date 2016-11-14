@@ -1,0 +1,263 @@
+.full {
+  background: url("http://liveinlecce.com/img/rsz_torresantandrea.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar{
+    padding: 10px 0;
+    margin-bottom: 0px;
+    border: 0;
+}
+.navbar-default {
+    background-color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #0681C4;
+    background-color: white;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #0681C4;
+}
+.navbar-nav a {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+.navbar-brand {
+    padding: 0px 15px;
+}    
+.searchBox {
+    width: 280px;
+    border: 1px solid #eee;
+}
+.noPadding {
+    padding: 0 !important;
+}
+.noMargin {
+    margin: 0 !important;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.container{
+  width: 100%;
+  padding: 0;
+}
+.sfondo-sfocato{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: blacj;
+    margin-top: 170px;
+    text-align: center;
+    padding: 30px;
+}
+.testo-sfocato{
+    font-size: 36px;
+    font-weight: 500;
+    opacity: 1;
+    line-height: 40px;
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
+}
+.margin-top-50{
+  margin-top: 50px;
+}
+.margin-top-10{
+  margin-top: 10px;
+}
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+.center-text{
+  text-align: center;
+}
+.intro{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Work Sans', sans-serif;
+}
+.centrato {
+    margin: 0 auto;
+}
+.fw700 {
+    font-weight: 700;
+}
+.btn-base, .btn-base:focus, .btn-primary, .btn-primary:focus {
+    background: #0681C4;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 0;
+}
+.textUppercase {
+    text-transform: uppercase;
+}
+.btn-md {
+    padding: 14px;
+    font-size: 18px;
+}
+.row-footer{
+    background-color: #191919;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.info-Title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: #999999;
+}
+.info-details{
+    font-weight: 400;
+    line-height: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.border-top-gray{
+    border-top: 1px solid gray;
+}
+.padding-left-right{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.intro-come-funziona {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #191919;
+    font-family: 'Roboto', sans-serif;
+}
+.testo-come-funziona {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
+}
+.title-info {
+    margin-top: 10px;
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: center;
+    color: #191919;
+   font-family: 'Work Sans', sans-serif;
+    
+}
+.content-info {
+    text-align: center;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 20px;
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px 0 15px;
+}
+.max-width-250{
+    max-width: 250px;
+}
+.max-width-100per{
+    max-width: 100%;
+}
+
+#come_funziona{
+    color: #337ab7;
+}
+
+
+.info {
+    background-color: #f6f6f6;
+}
+.padding-top-50{
+    padding-top: 50px;
+}
+.padding-top-20{
+    padding-top: 20px;
+}
+.padding-bottom-50{
+    padding-bottom: 50px;
+}
+.testo-sotto{
+    font-size: 24px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 32px;
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
+}
+.numeri-destra{
+    font-size: 70px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #0681C4;
+}
+.testo-destra{
+    font-size: 17px;
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DEL TESTO */
+.greenText{
+   color: #4caf50;
+}
+
+.redText{
+    color: #f44336;
+}
+
+.blueText{
+    color: #0681C4;
+}
+
+.yellowText{
+    color: #f0d457;
+}
+
+.whiteText{
+    color: white;
+}
+
+.grayText{
+    color: gray;
+}
+.
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DI BACKGROUND */
+.green{
+    background-color: #4caf50;
+}
+
+.red{
+    background-color: #f44336;
+}
+
+.blue{
+    background-color: #0681C4;
+}
+
+.yellow{
+    background-color: #f0d457;
+}
+
+.white{
+    background-color: white;
+}

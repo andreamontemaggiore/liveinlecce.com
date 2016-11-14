@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quality life in Lecce">
+    <meta name="author" content="Andrea Montemaggiore">
+
+    <title>Live in Lecce - Come funziona?</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/come_funziona.css" rel="stylesheet">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&region=IT&input=Lecce"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="navbar.html"></div>
+    
+    <div class="container">
+
+        <div class="row full">
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 sfondo-sfocato">
+                <p class="testo-sfocato">LiveInLecce è l'innovativo sistema che ti permette di trovare il luogo pi&ugrave; adatto alle tue esigenze</p>
+                
+            </div>
+        </div>
+        <div class="row margin-top-50">
+            <div class="col-lg-offset-1 col-lg-10">
+                <p class="intro-come-funziona center-text">
+                    Dipendenti pubblici, persone residenti, turisti: chiunque pu&ograve; contribuire a migliorare il sistema di classificazione delle vie di Lecce!<br>
+                    Tramite l'app, puoi perfezionare quello che gli OpenData hanno verificato e puoi rimanere aggiornato sulle ultime novità di ci&ograve; che accade intorno a te!
+                    
+                </p>
+            </div>
+        </div>   
+        <div class="row margin-top-50">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Attivita commerciali"><img src="img/attivita_commerciali.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Att. commerciali</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Green"><img src="img/social.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Green</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Sport"><img src="img/sport.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Social</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Servizi"><img src="img/tecnologia.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Servizi</p>
+            </div>
+         </div>
+        
+        <div class="row margin-top-50 info">
+            <p class="testo-come-funziona center-text padding-top-50">Come funziona?</p>
+
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 padding-top-50">
+                                <img src="img/rsz_idea.png" class="img-responsive centrato max-width">
+                                <p class="title-info">L'idea di base</p>
+                                <p class="content-info">
+                                    L'idea di base è stata quella di definire un indice di qualità della vita che aiuti a valutare un indirizzo in maniera semplice e veloce in funzione delle esigenze personali.<br>
+                                    Lo step successivo &eacute; stato quello di creare una App che permettesse di mettere in comunicazione i cittadini con le Amministrazioni Pubbliche e viceversa.
+                                </p>
+
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1 padding-top-50">
+                                <img src="img/algoritmo.png" class="img-responsive centrato max-width">
+                                <p class="title-info">Come realizzarlo?</p>
+                                <p class="content-info">
+                                    Creando un DataBase che contiene gli OpenData messi a disposizione dalle Amministrazioni Pubbliche ed integra i dati forniti opzionalmente dagli abitanti locali di Lecce.<br>
+                                    Avendo ci&oacute; , &eacute; stato necessario creare un algoritmo che, ricevendo in input l'indirizzo scelto dall'utente, tramite opportune formule, restituisca quale sia l'indice di qualità della vita associato.
+                                </p>
+            </div>
+         </div>   
+        <div class="row info padding-top-50">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                <img src="img/semplice_e_guidato.png" class="img-responsive centrato max-width">
+                                <p class="title-info">Il risultato</p>
+                                <p class="content-info">
+                                    Un valore globale di "indice di vivibilità" di quella determinata area, suddiviso utilizzando 4 macro-categorie e dettagliato visualizzando le tipologie di strutture presenti per ogni micro-categoria (che giustificano dunque il risultato).<br>
+                                    Viene visualizzato, inoltre, quanto si trovi vicino alla via indicata la centralina di rilevazione di inquinamento in maniera tale da poter analizzare il grafico per scoprire se e quando sono stati superati i limiti anti-inquinamento.
+                                </p>
+            </div>
+        </div>
+        <div class="row info padding-top-50 padding-bottom-50">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                                <img src="img/semplice_e_guidato.png" class="img-responsive centrato max-width">
+                                <p class="title-info">E poi?..</p>
+                                <p class="content-info">
+                                    Tutto questo è un buon sistema, si.. ma se rimanesse cos&igrave; sarebbe come avere una Ferrari e guidarla a 50 Km/h!<br>
+                                    Si è quindi pensato ad un pannello di controllo messo a disposizione dai rappresentanti delle Amministrazioni Pubbliche attraverso il quale potere vedere quali sono i problemi maggiori di Lecce (forniti dagli abitanti tramite app).<br> 
+                                    I rappresentanti delle amministrazioni, una volta analizzato e risolto il problema, potranno avvisare direttamente dal proprio "Pannello di controllo", tramite una notifica Push, tutte le persone che hanno scaricato l'app!<br>
+                                    Ma non solo!<br>
+                                    Potranno farlo anche quando verrà inaugurato un parco, quando verrà creata una nuova struttura, in caso di calamit&aacute; naturali ..
+                                    <br>
+                                    Questo vuole essere la base per un <b>Sistema Bidirezionale tra Amministrazioni e Cittadini</b>.
+                                </p>
+            </div>
+         </div>
+        
+        <div class="row ">
+            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 padding-top-50">
+                                <p class="testo-sotto">
+                                    Da quando gli OpenData sono stati resi pubblici dalle Amministrazioni di Lecce, nel 2013, oltre 40.000 dati sono stati messi a disposizione dei cittadini.
+                                </p>
+                                <p class="testo-sotto">
+                                    Nel 2014 il Comune di Lecce ha indetto il primo "Lecce OpenData Contest" e già allora le prime tre proposte vincitrici hanno sottolineato come sia possibile far crescere la popolazione con il loro riuso!
+                                </p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 padding-top-50">
+                                <p class="numeri-destra padding-top-20">
+                                    +40.000
+                                </p>
+                                <p class="testo-destra">
+                                    dati pubblici resi disponibili
+                                </p>
+                                <br><br>
+                                <p class="numeri-destra">
+                                    256
+                                </p>
+                                <p class="testo-destra">
+                                    Dataset
+                                </p>
+                                <br><br>
+                                <p class="numeri-destra">
+                                    23
+                                </p>
+                                <p class="testo-destra padding-bottom-50">
+                                    Valutazioni fornite dai cittadini tramite App<br>
+                                    (dato in continuo aggiornamento)
+                                </p>
+            </div>
+         </div>
+
+        
+
+        <div w3-include-html="footer.html"></div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/come_funziona.js"></script>
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>

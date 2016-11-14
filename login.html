@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=1,initial-scale=1,user-scalable=1" />
+	<title>LiveInLecce Login</title>
+	
+	<link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+
+</head>
+<body>
+	<div class="alert alert-info" role="alert">
+	<button type="button" class="close" data-dismiss="alert">×</button>
+	<strong>Benvenuto!</strong><br> L'accesso a questa area &eacute; destinato solamente ai dipendenti delle Amministrazioni Pubbliche del Comune di Lecce.<br> Per il Concorso, è sufficiente utilizzare come nome utente "concorso" e come password "concorso".
+</div>
+
+    
+    
+    
+    
+	<section class="container" style="padding-top:50px">
+	    <section class="login-form">
+		
+		<section>
+			<img src="img/logo_comune_lecce.jpg" class="img-responsive" alt="logo_comune_lecce" />
+		</section>
+        <section>
+            <p id="accesso_utenti"> ACCESSO UTENTI</p>
+		</section>
+		<div class="panel panel-default" id="login-panel">
+		  	<div class="panel-body">
+		    	<form method="post" action="" role="login" >
+					<div class="form-group">
+						
+						<input type="text"  id="nome_utente" required class="form-control" onfocus="this.value = ''" />
+					</div>
+					
+					<div class="form-group">
+						<input type="password"  id="password" required class="form-control" onfocus="this.value = ''" />
+					</div>
+					
+                    
+					<div class="form-group">
+						<label class="errore" id="errore"></label>
+					</div>
+					
+					<!--<input type="checkbox" name="remember" value="1" /> Remember me-->
+					<button type="button"  id="effettua_login" class="btn btn-primary btn-block">Accedi</button>
+				</form>
+                <p id="visualizza_pannello"> Ho dimenticato la password</p>
+		  	</div>
+		  	
+		</div>
+		
+            <div class="panel panel-default" id="recupera-password-panel">
+		  	<div class="panel-body">
+		    	<form method="post" action="" role="login" >
+                    
+                    <p id="credenziali">Inserisci le credenziali richieste per ricevere la password al tuo indirizzo email</p>
+                    <br><br>
+					<div class="form-group">	
+						<input type="text" name="cf" value="Codice Fiscale (*)" id="cf" required class="form-control"  />
+					</div>
+					
+					<div class="form-group">
+						<input type="email" name="email" value="Email (*)" id="email" required class="form-control"  />
+					</div>
+                    
+					<div class="form-group">
+						<label class="errore" id="errore"></label>
+					</div>
+					
+					<!--<input type="checkbox" name="remember" value="1" /> Remember me-->
+					<button type="button"  id="recupera_password" class="btn btn-primary btn-block">Recupera</button>
+				</form>
+		  	</div>
+		  	
+		</div>
+		</section>
+	</section>
+	
+	
+</body>
+</html>

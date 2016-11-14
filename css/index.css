@@ -1,0 +1,193 @@
+.full {
+  background: url(http://liveinlecce.com/img/rsz_lecce.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.row-search{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-top: 200px;
+    text-align: center
+}
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  color: black
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+i:hover{
+    cursor: pointer
+}
+
+.pac-icon {
+  width: 0;
+  background-image: none;
+}
+#search_view{
+  margin-bottom: 20px;
+}
+.container{
+  width: 100%;
+  padding: 0;
+}
+.margin-top-50{
+  margin-top: 50px;
+}
+.margin-top-10{
+  margin-top: 10px;
+}
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+.center-text{
+  text-align: center;
+}
+.intro{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.centrato {
+    margin: 0 auto;
+}
+.fw700 {
+    font-weight: 700;
+}
+.btn-base, .btn-base:focus, .btn-primary, .btn-primary:focus {
+    background: #0681C4;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 0;
+}
+.textUppercase {
+    text-transform: uppercase;
+}
+.btn-md {
+    padding: 14px;
+    font-size: 18px;
+}
+.row-footer{
+    background-color: #191919;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.info-Title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    color: #999999;
+}
+.info-details{
+    font-weight: 400;
+    line-height: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.border-top-gray{
+    border-top: 1px solid gray;
+}
+.padding-left-right{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.navbar{
+    padding: 10px 0;
+    margin-bottom: 0px;
+    border: 0;
+}
+.navbar-default {
+    background-color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #0681C4;
+    background-color: white;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #0681C4;
+}
+.navbar-nav a {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+.navbar-brand {
+    padding: 0px 15px;
+}    
+.searchBox {
+    width: 280px;
+    border: 1px solid #eee;
+}s
+
+
+
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DEL TESTO */
+.greenText{
+   color: #4caf50;
+}
+
+.redText{
+    color: #f44336;
+}
+
+.blueText{
+    color: #0681C4;
+}
+
+.yellowText{
+    color: #f0d457;
+}
+
+.whiteText{
+    color: white;
+}
+
+.grayText{
+    color: gray;
+}
+.
+
+/* DEFINIZIONI DELLE CLASSI DEI COLORI DI BACKGROUND */
+.green{
+    background-color: #4caf50;
+}
+
+.red{
+    background-color: #f44336;
+}
+
+.blue{
+    background-color: #0681C4;
+}
+
+.yellow{
+    background-color: #f0d457;
+}
+
+.white{
+    background-color: white;
+}
+

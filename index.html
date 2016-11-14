@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it" >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quality life in Lecce">
+    <meta name="author" content="Andrea Montemaggiore">
+
+    <title>Live in Lecce</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&region=IT&input=Lecce&key=AIzaSyBMMUOWPOOBiHZVwDqOBY2UU4RqRj5gtag"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="navbar_senza_ricerca.html"></div>
+    <div class="container">
+
+        <div class="row full">
+            <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 row-search">
+                <h3>Non esiste il posto migliore in assoluto,</h3>
+                <h3>ma esiste il posto migliore per te!</h3>
+                <div class="inner-addon right-addon">
+                  <!-- <i class="glyphicon glyphicon-search" id="find"></i> -->
+                  <input type="text" id="search_view" class="form-control" placeholder="Inizia a digitare un indirizzo" />
+                  
+                </div>
+            </div>
+        </div>
+        
+        <div class="row margin-top-50 padding-left-right hidden-xs">
+            <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 cosa-e">
+                <p class="intro center-text">
+                    LiveinLecce &egrave; l'innovativo motore di ricerca del tuo posto ideale!
+                </p>
+                <p class="intro center-text">
+                    Con l'ausilio degli OpenData messi a disposizione del Comune di Lecce e dei dati reali forniti dalle persone che abitano a Lecce, con un semplice click puoi trovare il posto pi&ugrave; adatto alle tue esigenze.
+                </p>
+            </div>
+       </div>     
+        <div class="row margin-top-50 hidden-xs">
+            <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Attivita commerciali"><img src="img/attivita_commerciali.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Att. commerciali</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Green"><img src="img/social.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Green</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Sport"><img src="img/sport.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Social</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                                <a href="/discover?category=arte-e-cultura" title="Servizi"><img src="img/tecnologia.png" class="img-responsive centrato hoverImgCat"></a>
+                                <p class="center-text fw700 margin-top-10">Servizi</p>
+            </div>
+         </div>   
+        <div class="row margin-top-50 margin-bottom-50 hidden-xs">
+            <div class="col-md-12 center-text">           
+                <a href="come_funziona.html" class="btn btn-base btn-md textUppercase">Scopri come funziona</a>
+            </div>
+        </div>    
+        
+
+        <div w3-include-html="footer.html"></div>
+
+        
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>
